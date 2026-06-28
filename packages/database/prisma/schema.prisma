@@ -4,7 +4,6 @@
 
 generator client {
   provider = "prisma-client-js"
-  output   = "../../../apps/api/node_modules/.prisma/client"
 }
 
 datasource db {
@@ -284,8 +283,8 @@ model FarmZone {
   type        ZoneType
   description String?
   area        Float?
-   farmId      String?
-  farm        Farm?      @relation(fields: [farmId], references: [id])
+  farmId      String
+  farm        Farm       @relation(fields: [farmId], references: [id])
   devices     Device[]
   crops       Crop[]
   animals     Animal[]
@@ -307,8 +306,8 @@ model Crop {
   status          CropStatus     @default(PLANNED)
   area            Float?
   notes           String?
-  zoneId       String?
-  zone         FarmZone?    @relation(fields: [zoneId], references: [id])
+  zoneId          String
+  zone            FarmZone       @relation(fields: [zoneId], references: [id])
   harvests        Harvest[]
   irrigations     Irrigation[]
   fertilizations  Fertilization[]
@@ -396,8 +395,8 @@ model Animal {
   status       AnimalStatus @default(HEALTHY)
   notes        String?
   photo        String?
-   zoneId       String?
-  zone         FarmZone?    @relation(fields: [zoneId], references: [id])
+  zoneId       String
+  zone         FarmZone     @relation(fields: [zoneId], references: [id])
   vaccinations Vaccination[]
   pregnancies  Pregnancy[]
   weightLogs   WeightLog[]
