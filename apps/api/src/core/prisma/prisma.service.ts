@@ -45,7 +45,7 @@ export class PrismaService implements OnModuleInit, OnModuleDestroy {
     const { PrismaClient } = require('@prisma/client');
     const { PrismaPg } = require('@prisma/adapter-pg');
     const pool = new Pool({
-      connectionString: 'postgresql://smartfarm:smartfarm123@localhost:5432/smartfarm',
+      connectionString: process.env.DATABASE_URL || 'postgresql://smartfarm:smartfarm123@localhost:5432/smartfarm',
     });
     const adapter = new PrismaPg(pool);
     this.client = new PrismaClient({ adapter });
