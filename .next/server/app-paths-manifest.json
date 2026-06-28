@@ -1,0 +1,13 @@
+{
+  "/(auth)/login/page": "app/(auth)/login/page.js",
+  "/(dashboard)/dashboard/page": "app/(dashboard)/dashboard/page.js",
+  "/(dashboard)/settings/staff/page": "app/(dashboard)/settings/staff/page.js",
+  "/(dashboard)/farm/page": "app/(dashboard)/farm/page.js",
+  "/(dashboard)/settings/page": "app/(dashboard)/settings/page.js",
+  "/(dashboard)/reports/page": "app/(dashboard)/reports/page.js",
+  "/(dashboard)/tasks/page": "app/(dashboard)/tasks/page.js",
+  "/(dashboard)/stock/page": "app/(dashboard)/stock/page.js",
+  "/(dashboard)/crm/page": "app/(dashboard)/crm/page.js",
+  "/(dashboard)/scada/page": "app/(dashboard)/scada/page.js",
+  "/(dashboard)/animals/page": "app/(dashboard)/animals/page.js"
+}

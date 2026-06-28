@@ -1,0 +1,37 @@
+{
+  "name": "SmartFarm ERP",
+  "short_name": "SmartFarm",
+  "description": "Akıllı Tarım ve Hayvancılık ERP/CRM Platformu",
+  "start_url": "/dashboard",
+  "display": "standalone",
+  "background_color": "#1B5E20",
+  "theme_color": "#2E7D32",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["business", "productivity"],
+  "shortcuts": [
+    {
+      "name": "Dashboard",
+      "url": "/dashboard",
+      "icons": [{ "src": "/icons/shortcut-dashboard.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "SCADA",
+      "url": "/scada",
+      "icons": [{ "src": "/icons/shortcut-scada.png", "sizes": "96x96" }]
+    }
+  ]
+}
