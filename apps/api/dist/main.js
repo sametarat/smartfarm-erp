@@ -9,8 +9,9 @@ async function bootstrap() {
     app.enableCors({ origin: '*', credentials: true });
     app.setGlobalPrefix('api/v1');
     app.useGlobalPipes(new common_1.ValidationPipe({ whitelist: true, transform: true }));
-    await app.listen(3001);
-    console.log('SmartFarm API: http://localhost:3001/api/v1');
+    const port = process.env.PORT || 3001;
+    await app.listen(port);
+    console.log(`SmartFarm API: http://localhost:${port}/api/v1`);
 }
 bootstrap();
 //# sourceMappingURL=main.js.map
