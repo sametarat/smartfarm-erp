@@ -10,7 +10,8 @@ import { UserMenu } from '@/components/layout/user-menu'
 import { NotificationBell } from '@/components/layout/notification-bell'
 import {
   LayoutDashboard, Sprout, PawPrint, CheckSquare, Users,
-  Package, DollarSign, FileText, Settings, Cpu, Menu, X, Zap, BookOpen
+  Package, DollarSign, FileText, Settings, Cpu, Menu, X,
+  Zap, BookOpen, Calendar
 } from 'lucide-react'
 
 const ROUTE_ROLES: Record<string, string[]> = {
@@ -37,6 +38,7 @@ const NAV_ITEMS = [
     items: [
       { href: '/farm',            icon: Sprout,          label: 'Tarım',            badge: null, roles: ['SUPER_ADMIN','OWNER','TECHNICIAN'] },
       { href: '/animals',         icon: PawPrint,        label: 'Hayvancılık',      badge: null, roles: ['SUPER_ADMIN','OWNER','BARN'] },
+      { href: '/calendar',        icon: Calendar,        label: 'Ekim Takvimi',     badge: null, roles: [] },
     ]
   },
   {
